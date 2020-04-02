@@ -1,12 +1,21 @@
+<script>
+  import ImageCard from "@components/ImageCard.svelte";
+
+  let property = {
+    imageUrl: "PALETAS.jpg",
+    imageAlt: "Paletas",
+    beds: 3,
+    baths: 2,
+    title: "Paletas heladas",
+    priceInCents: 190000,
+    formattedPrice: "$1,900.00",
+    reviewCount: 34,
+    rating: 4
+  };
+</script>
+
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>Sapper project template</title>
 </svelte:head>
 
-<h1 class="text-center text-2xl my-4">Great success!</h1>
-
-<div class="flex flex-col items-center mb-4">
-	<img alt='Sapper Logo' class="w-2/3 lg:w-1/3" src='sapper-logo.svg'>
-	<img alt='Tailwind Logo' class="w-2/3 lg:w-1/3" src='tailwind-logo.svg'>
-</div>
-
-<p class="text-center"><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<ImageCard {property} />
