@@ -1,12 +1,12 @@
 <script>
   import ImageCard from "@components/ImageCard.svelte";
 
-  let property = {
-    imageUrl: "PALETAS.jpg",
-    imageAlt: "Paletas",
-    beds: 3,
-    baths: 2,
-    title: "Paletas heladas",
+  let course = {
+    imageUrl: "man.jpg",
+    imageAlt: "Vision Artificial",
+    weeks: 3,
+    modules: 2,
+    title: "Vision Artificial en tiempos de redes convolucionales profundas",
     priceInCents: 190000,
     formattedPrice: "$1,900.00",
     reviewCount: 34,
@@ -18,4 +18,4 @@
   <title>Sapper project template</title>
 </svelte:head>
 
-<ImageCard {property} />
+<ImageCard {course} />
